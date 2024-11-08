@@ -14,7 +14,7 @@ const RatingStars = ({ rating, maxRating = 5 }) => {
       {Array(filledStars)
         .fill(0)
         .map((_, index) => (
-          <span key={index} className="text-yellow-500">
+          <span key={index} className="text-[#44BA7A] ">
             <IoStarSharp />
           </span>
         ))}

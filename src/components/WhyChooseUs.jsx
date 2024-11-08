@@ -31,15 +31,15 @@ const WhyChooseUs = () => {
     },
   ];
   return (
-    <>
-      <div className="flex p-[2rem]">
-        <aside className="text-3xl text-left basis-[50%]">How It Works</aside>
+    <div className="p-[1rem]">
+      <div className="block md:py-[3rem] md:flex  my-[2rem]">
+        <aside className="text-3xl text-left basis-[50%] ">How It Works</aside>
         <aside className="basis-[50%] text-left text-[16px]">
           Simple steps to start buying, selling, and managing your crypto assets
           on our platform.
         </aside>
       </div>
-      <div className="flex justify-around p-[2rem] gap-4 bg-[#1E1E1E] rounded-[40px]">
+      <div className="flex justify-around flex-wrap p-[2rem] gap-4 bg-[#1E1E1E] rounded-[40px]">
         {cardData.map((card, index) => (
           <DottedCard
             key={index}
@@ -50,7 +50,7 @@ const WhyChooseUs = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

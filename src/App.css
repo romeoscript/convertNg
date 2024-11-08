@@ -18,7 +18,7 @@
   min-height: 400px;
   display: flex;
   align-items: center;
-  width: 450px!important;
+  /* width: 450px!important; */
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);

@@ -6,7 +6,7 @@ import { CiShare1 } from "react-icons/ci";
 
 const QuickCard = ({ title, description, href, image }) => {
   return (
-    <div className="block p-4 rounded-[20px] border-[#1E1E1E33] border-[1px] shadow-lg py-[3.5rem] hover:bg-gray-50 transition duration-300 ease-in-out max-w-[320px] flex flex-col items-center gap-4 h-[350px] max-h-[400px]">
+    <div className="block m-[1rem] p-4 rounded-[20px] border-[#1E1E1E33] border-[1px] shadow-lg py-[3.5rem] hover:bg-gray-50 transition duration-300 ease-in-out max-w-[320px] flex flex-col items-center gap-4 h-[350px] max-h-[400px]">
       <div className="h-[80px] w-[80px] bg-[#F9F9F9] rounded-full flex  items-center justify-center">
         {" "}
         <img

@@ -34,7 +34,8 @@ const Review = () => {
     },
   ];
   return (
-    <div className="my-[2rem]">
+    <div className="my-[2rem] p-[1rem]">
+        <h1 className="font-bold text-2xl text-left">Reviews & Ratings</h1>
       <SliderCarousel>
         {reviewInfo.map((review, index) => (
           <ReviewCard
