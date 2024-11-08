@@ -26,25 +26,25 @@ const HeroSection = () => {
               <p className="text-[#1E1E1E] text-[14px] font-500 mt-8">
                 Active users
               </p>
-              <CounterUp end={200} className="text-[34px] text-black font-700" />
+              <CounterUp end={200} className="text-[34px] text-black font-bold" />
             </aside>
             <aside>
               <p className="text-[#1E1E1E] text-[14px] font-500 mt-8">
                Community Members
               </p>
-              <CounterUp end={1500} className="text-[34px] text-black font-700" />
+              <CounterUp end={1500} className="text-[34px] text-black font-bold" />
             </aside>
             <aside>
               <p className="text-[#1E1E1E] text-[14px] font-500 mt-8">
                 Trusted By Over 
               </p>
-              <CounterUp end={200} className="text-[34px] text-black font-700" />
+              <CounterUp end={200} className="text-[34px] text-black font-bold" />
             </aside>
             <aside>
               <p className="text-[#1E1E1E] text-[14px] font-500 mt-8">
                 Transactions
               </p>
-              <p end={200} className="text-[34px] text-black font-700">$1M+</p>
+              <p end={200} className="text-[34px] text-black font-bold">$1M+</p>
             </aside>
           </div>
         </div>
