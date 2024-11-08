@@ -12,6 +12,7 @@ const Homepage = () => {
        <FinancialSection />
        <WhyChooseUs />
        <Review />
+       
     </div>
   )
 }

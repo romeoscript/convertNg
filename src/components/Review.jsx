@@ -34,7 +34,7 @@ const Review = () => {
     },
   ];
   return (
-    <div>
+    <div className="my-[2rem]">
       <SliderCarousel>
         {reviewInfo.map((review, index) => (
           <ReviewCard

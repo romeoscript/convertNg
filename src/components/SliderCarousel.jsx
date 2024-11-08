@@ -3,6 +3,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { CustomLeftArrow, CustomRightArrow } from "./CustomArrow";
 
 const SliderCarousel = ({
   children,
@@ -50,6 +51,8 @@ const SliderCarousel = ({
           autoPlay={autoPlay}
           autoPlaySpeed={autoPlaySpeed}
           arrows={arrows}
+          customLeftArrow={<CustomLeftArrow />}
+          customRightArrow={<CustomRightArrow />}
           showDots={showDots}
           className={className}
         >
