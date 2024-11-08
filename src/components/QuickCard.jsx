@@ -2,25 +2,34 @@
 
 import React from "react";
 import { Text } from "@radix-ui/themes";
-import non from "../assets/home/Non-categorized.png";
 import { CiShare1 } from "react-icons/ci";
 
-const QuickCard = ({ title, description, href, maxWidth = "350px" }) => {
+const QuickCard = ({ title, description, href, image }) => {
   return (
-    <div
-      className="block p-4 rounded-lg shadow-lg hover:bg-gray-50 transition duration-300 ease-in-out max-w-[320px] flex flex-col items-center gap-4 h-[350px] max-h-[400px]"
-    >
-     <div className="h-[60px] w-[60px] bg-[#F9F9F9] rounded-full flex items-center justify-center"> <img src={non} alt="Customer" className="w-8 h-8 mx-auto" /></div>
+    <div className="block p-4 rounded-[20px] border-[#1E1E1E33] border-[1px] shadow-lg py-[3.5rem] hover:bg-gray-50 transition duration-300 ease-in-out max-w-[320px] flex flex-col items-center gap-4 h-[350px] max-h-[400px]">
+      <div className="h-[80px] w-[80px] bg-[#F9F9F9] rounded-full flex  items-center justify-center">
+        {" "}
+        <img
+          src={image}
+          alt="Customer"
+          className="w-8 h-8 
+        "
+        />
+      </div>
       <Text as="div" size="2" weight="bold" className="mb-2 text-2xl">
-        {/* {title} */} Easy Navigation
+        {title}
       </Text>
-      <Text as="div" color="gray" size="2" className="my-[1.5rem]">
-        From depositing funds to executing trades and withdrawing seamlessly,
-        every step is easy
-        {/* {description} From depositing funds to executing trades and withdrawing seamlessly, every step is easy */}
+      <Text
+        as="div"
+        size="2"
+        className="my-[1rem] text-gray-500 text-sm p-[0.5rem]"
+      >
+        {description}
       </Text>
 
-      <Text>Learn More <CiShare1 /> </Text>
+      <Text className="flex items-center gap-2">
+        Learn More <CiShare1 />{" "}
+      </Text>
     </div>
   );
 };
