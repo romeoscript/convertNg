@@ -5,7 +5,7 @@ import Subscription from "../components/Subscription";
 
 const AboutPage = () => {
   return (
-    <div className="text-black mt-[1rem] ">
+    <div className="text-black py-[1rem] ">
       <div className="bg-gray-100 flex flex-wrap p-[2rem]">
         <aside className="md:basis-[50%] text-4xl text-left font-bold ">
           <p className="md:w-3/4 max-md:text-3xl max-md:mb-[1rem] ">Why ConvertNG is Your Ultimate Financial Solution;</p>
