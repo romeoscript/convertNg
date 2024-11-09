@@ -28,7 +28,7 @@ const FinancialSection = () => {
   return (
     <>
       <div className="md:flex p-[2rem]">
-        <aside className="md:text-3xl  max-md:font-bold text-left basis-[50%]">Complete Financial Management Made Easy with ConvertNG</aside>
+        <aside className="md:text-3xl text-xl max-md:font-bold text-left basis-[50%]">Complete Financial Management Made Easy with ConvertNG</aside>
             <aside className="basis-[50%] text-left text-[16px]">
           Seamlessly buy, sell, swap, and manage your crypto assets, convert
           gift cards to cash, and handle all your bill payments in one secure

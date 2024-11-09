@@ -94,6 +94,7 @@ const Navbar = () => {
             isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
           } transition-transform duration-300 ease-in-out z-[10000]`}
         >
+          
           <button
             type="button"
             onClick={() => setIsMobileMenuOpen(false)}
