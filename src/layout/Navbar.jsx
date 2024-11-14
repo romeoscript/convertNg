@@ -66,15 +66,15 @@ const Navbar = () => {
 
         {/* Desktop Auth Buttons */}
         <div className="hidden md:flex space-x-4 items-center">
-          <a href="#login" className="text-gray-700">
+          <Link to="/auth/register" className="text-gray-700">
             Login
-          </a>
-          <a
-            href="#signup"
-            className="px-4 py-2 bg-black text-white rounded-[15px]"
-          >
-            Signup
-          </a>
+          </Link>
+
+  
+           <Link to="/auth/register"  className="px-4 py-2 bg-black text-white rounded-[15px]">
+            signup
+          </Link>
+      
         </div>
 
         {/* Mobile Menu Button */}
@@ -84,7 +84,7 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="text-gray-700 font-bold text-xl focus:outline-none"
           >
-           <CiMenuFries />
+            <CiMenuFries />
           </button>
         </div>
 
@@ -94,13 +94,12 @@ const Navbar = () => {
             isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
           } transition-transform duration-300 ease-in-out z-[10000]`}
         >
-          
           <button
             type="button"
             onClick={() => setIsMobileMenuOpen(false)}
             className="text-gray-700 focus:outline-none  text-xl absolute top-4 right-4"
           >
-          <IoClose />
+            <IoClose />
           </button>
           <ul className="mt-16 space-y-6 px-6 text-gray-700 text-lg font-medium">
             <li>
