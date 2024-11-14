@@ -8,6 +8,7 @@ import AboutPage from "./pages/Aboutpage";
 import ContactPage from "./pages/ContactPage";
 import AuthLayout from "./layout/AuthLayout";
 import LoginPage from "./pages/LoginPage";
+import SignUpPage from "./pages/SignUpPage";
 // import AdminDashboard from "./pages/admin/AdminDashboard";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         {isAdmin && (
           <Route path="/auth" element={<AuthLayout />}>
             <Route path="login" element={<LoginPage />} />
+            <Route path="register" element={<SignUpPage />} />
             {/* Add more admin routes here */}
           </Route>
         )}
