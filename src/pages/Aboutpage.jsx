@@ -2,6 +2,7 @@ import React from "react";
 import { Text } from "@radix-ui/themes";
 import { CiShare1 } from "react-icons/ci";
 import Subscription from "../components/Subscription";
+import Cropped from "../components/Cropper";
 
 const AboutPage = () => {
   return (
@@ -36,6 +37,7 @@ const AboutPage = () => {
           </p>
         </aside>
       </div>
+      {/* <Cropped /> */}
       <Subscription />
     </div>
   );
