@@ -12,7 +12,7 @@ const LoginPage = () => {
     <Form
       //   {...formItemLayout}
       form={form}
-      name="register"
+      name="login"
       onFinish={onFinish}
       style={{
         maxWidth: 600,

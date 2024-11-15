@@ -66,7 +66,7 @@ const Navbar = () => {
 
         {/* Desktop Auth Buttons */}
         <div className="hidden md:flex space-x-4 items-center">
-          <Link to="/auth/register" className="text-gray-700">
+          <Link to="/auth/login" className="text-gray-700">
             Login
           </Link>
 
