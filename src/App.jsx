@@ -9,10 +9,10 @@ import ContactPage from "./pages/ContactPage";
 import AuthLayout from "./layout/AuthLayout";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
+import DashLayout from "./layout/DashLayout";
 // import AdminDashboard from "./pages/admin/AdminDashboard";
 
 function App() {
-  const isAdmin = true; // Replace with real authentication logic
 
   return (
     <Router>
@@ -24,14 +24,18 @@ function App() {
           <Route path="contact" element={<ContactPage />} />
         </Route>
 
-        {/* Admin Routes */}
-        {isAdmin && (
+
           <Route path="/auth" element={<AuthLayout />}>
             <Route path="login" element={<LoginPage />} />
             <Route path="register" element={<SignUpPage />} />
             {/* Add more admin routes here */}
           </Route>
-        )}
+          <Route path="/dashboard" element={<DashLayout />}>
+            <Route path="login" element={<LoginPage />} />
+            <Route path="register" element={<SignUpPage />} />
+            {/* Add more admin routes here */}
+          </Route>
+
       </Routes>
     </Router>
   );
