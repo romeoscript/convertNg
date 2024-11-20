@@ -10,6 +10,7 @@ import AuthLayout from "./layout/AuthLayout";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import DashLayout from "./layout/DashLayout";
+import Profile from "./pages/Dashb/Profile";
 // import AdminDashboard from "./pages/admin/AdminDashboard";
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
             {/* Add more admin routes here */}
           </Route>
           <Route path="/dashboard" element={<DashLayout />}>
-            <Route path="login" element={<LoginPage />} />
+            <Route path="profile" element={<Profile />} />
             <Route path="register" element={<SignUpPage />} />
             {/* Add more admin routes here */}
           </Route>

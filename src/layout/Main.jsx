@@ -7,7 +7,7 @@ const Main = ({ children }) => {
   return (
     <div className="min-h-screen ">
       <Navbar />
-      <main className="flex-grow container mx-auto py-8 max-w-7xl  mt-[2rem]">
+      <main className="flex-grow container  mx-auto py-8 max-w-8xl  mt-[2rem]">
         <Outlet />
       </main>
       <Footer />
