@@ -5,6 +5,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import { GoArrowDownLeft } from "react-icons/go";
 import { CgMathPlus } from "react-icons/cg";
 import AssetsTable from "../../components/AssetsTable";
+import RecentTransactions from "../../components/RecentTransactions";
 
 const Dashboard = () => {
   const token = [
@@ -70,8 +71,12 @@ const Dashboard = () => {
       </aside>
 
       <div className="bg-white shadow-md my-[2rem] rounded-lg p-6">
-        <h2 className="text-xl font-semibold mb-4">Assets</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-left">Assets</h2>
         <AssetsTable />
+      </div>
+      <div className="bg-white shadow-md my-[2rem] rounded-lg p-6">
+        <h2 className="text-2xl font-semibold mb-4 text-left">Recent Transactions</h2>
+        <RecentTransactions />
       </div>
     </div>
   );
