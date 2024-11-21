@@ -1,11 +1,21 @@
 import React from "react";
-import { Button, Form, Input, Select } from "antd";
+import { Button, Form, Input, Select, Upload } from "antd";
+import { InboxOutlined, UploadOutlined } from '@ant-design/icons';
+
 const { Option } = Select;
 
 const Profile = () => {
   const [form] = Form.useForm();
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
+  };
+
+  const normFile = (e) => {
+    console.log('Upload event:', e);
+    if (Array.isArray(e)) {
+      return e;
+    }
+    return e?.fileList;
   };
 
   return (
@@ -74,7 +84,29 @@ const Profile = () => {
         >
           <Input className="p-[0.5rem]" />
         </Form.Item>
-
+        <div className="flex gap-4">
+          <Form.Item
+            name="fname"
+            label="First Name"
+            className="w-full"
+            rules={[
+              {
+                type: "text",
+              },
+              {
+                required: true,
+                message: "Please input your First Name",
+              },
+            ]}
+          >
+            <Input className="w-full p-[0.5rem]" />
+          </Form.Item>
+          <Form.Item label="Select" className="w-full p-[0.5rem]">
+            <Select>
+              <Select.Option value="demo">Demo</Select.Option>
+            </Select>
+          </Form.Item>
+        </div>
         <Form.Item
           name="Message"
           label="Message"
@@ -94,10 +126,30 @@ const Profile = () => {
             }}
           />
         </Form.Item>
-
+        <Form.Item label="Profile Image"  className="w-[300px]">
+          <Form.Item
+            name="dragger"
+            valuePropName="fileList"
+            getValueFromEvent={normFile}
+            noStyle
+           
+          >
+            <Upload.Dragger name="files" action="/upload.do">
+              <p className="ant-upload-drag-icon">
+                <InboxOutlined />
+              </p>
+              <p className="ant-upload-text">
+              Drag and drop image
+              </p>
+              <p className="ant-upload-hint">
+                Support for a single or bulk upload.
+              </p>
+            </Upload.Dragger>
+          </Form.Item>
+        </Form.Item>
         <Form.Item>
           <Button type="primary" className="w-full bg-black" htmlType="submit">
-            Register
+            Submit
           </Button>
         </Form.Item>
       </Form>
