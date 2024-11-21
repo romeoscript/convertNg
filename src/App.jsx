@@ -15,6 +15,7 @@ import Settings from "./pages/Dashb/settings";
 import VirtualCard from "./pages/Dashb/VirtualCard";
 import Swap from "./pages/Dashb/Swap";
 import Dashboard from "./pages/Dashb/Dashboard";
+import MarketPlace from "./pages/Dashb/MarketPlace";
 // import AdminDashboard from "./pages/admin/AdminDashboard";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
             <Route path="settings" element={<Settings />} />
             <Route path="cards" element={<VirtualCard />} />
             <Route path="swap" element={<Swap />} />
+            <Route path="market" element={<MarketPlace />} />
             {/* Add more admin routes here */}
           </Route>
 
