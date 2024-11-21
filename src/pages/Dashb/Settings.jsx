@@ -73,7 +73,7 @@ const Settings = () => {
           <Input.Password className="w-full p-[0.5rem]" />
         </Form.Item>
         <Form.Item>
-          <Button type="primary" className="w-full bg-black" htmlType="submit">
+          <Button type="primary" className="w-full bg-white  border-black text-black d" htmlType="submit">
             Update Password
           </Button>
         </Form.Item>
@@ -81,7 +81,7 @@ const Settings = () => {
 
       <div className="max-md:w-[90%] max-md:m-auto bg-white p-[3rem] rounded-lg m-[2rem]">
         <Form.Item>
-          <Button type="primary" className="w-full bg-black" htmlType="submit">
+          <Button type="primary" className="w-full bg-white border-black text-black" htmlType="submit">
             Delete Account
           </Button>
         </Form.Item>
