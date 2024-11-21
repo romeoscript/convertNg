@@ -14,6 +14,7 @@ import Profile from "./pages/Dashb/Profile";
 import Settings from "./pages/Dashb/settings";
 import VirtualCard from "./pages/Dashb/VirtualCard";
 import Swap from "./pages/Dashb/Swap";
+import Dashboard from "./pages/Dashb/Dashboard";
 // import AdminDashboard from "./pages/admin/AdminDashboard";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
             {/* Add more admin routes here */}
           </Route>
           <Route path="/dashboard" element={<DashLayout />}>
+            <Route index element={<Dashboard />} />
             <Route path="profile" element={<Profile />} />
             <Route path="settings" element={<Settings />} />
             <Route path="cards" element={<VirtualCard />} />

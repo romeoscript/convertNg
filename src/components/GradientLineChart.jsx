@@ -39,8 +39,8 @@ const GradientLineChart = () => {
 
           // Create gradient
           const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
-          gradient.addColorStop(0, "rgba(255, 99, 132, 0.1)");
-          gradient.addColorStop(1, "rgba(255, 99, 132, 0.5)");
+          gradient.addColorStop(1, "rgba(30, 30, 30, 0.6)");
+          gradient.addColorStop(0, "rgba(30, 30, 30, 0)");
           return gradient;
         },
         tension: 0.4, // Smooth curve
@@ -59,15 +59,15 @@ const GradientLineChart = () => {
           display: false,
         },
         ticks: {
-          color: "#fff", // White labels
+          color: "black", // White labels
         },
       },
       y: {
         grid: {
-          color: "rgba(255, 255, 255, 0.1)", // Light grid lines
+          color: "lightgray", // Light grid lines
         },
         ticks: {
-          color: "#fff", // White labels
+          color: "black", // White labels
         },
       },
     },
@@ -84,7 +84,7 @@ const GradientLineChart = () => {
   };
 
   return (
-    <div className="relative w-full h-[400px] bg-[#1E1E1E] rounded-lg p-4">
+    <div className="relative w-full h-[400px] bg-[white] rounded-lg p-4">
       <Line data={data} options={options} />
     </div>
   );
