@@ -12,7 +12,7 @@ import SignUpPage from "./pages/SignUpPage";
 import DashLayout from "./layout/DashLayout";
 import Profile from "./pages/Dashb/Profile";
 import Settings from "./pages/Dashb/settings";
-import Cards from "./pages/Dashb/Cards";
+import VirtualCard from "./pages/Dashb/VirtualCard";
 // import AdminDashboard from "./pages/admin/AdminDashboard";
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
           <Route path="/dashboard" element={<DashLayout />}>
             <Route path="profile" element={<Profile />} />
             <Route path="settings" element={<Settings />} />
-            <Route path="cards" element={<Cards />} />
+            <Route path="cards" element={<VirtualCard />} />
             {/* Add more admin routes here */}
           </Route>
 
