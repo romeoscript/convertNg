@@ -11,6 +11,7 @@ import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import DashLayout from "./layout/DashLayout";
 import Profile from "./pages/Dashb/Profile";
+import Settings from "./pages/Dashb/settings";
 // import AdminDashboard from "./pages/admin/AdminDashboard";
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
           </Route>
           <Route path="/dashboard" element={<DashLayout />}>
             <Route path="profile" element={<Profile />} />
-            <Route path="register" element={<SignUpPage />} />
+            <Route path="settings" element={<Settings />} />
             {/* Add more admin routes here */}
           </Route>
 
